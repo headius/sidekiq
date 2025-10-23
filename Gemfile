@@ -18,13 +18,13 @@ gem "activerecord-jdbcsqlite3-adapter", platforms: :jruby
 gem "after_commit_everywhere", require: false
 gem "yard"
 gem "csv"
-gem "vernier" unless RUBY_VERSION < "3"
+gem "vernier", platforms: :ruby unless RUBY_VERSION < "3"
 gem "webrick"
 
 group :test do
   gem "maxitest"
   gem "simplecov"
-  gem "debug"
+  gem "debug", platforms: :ruby
 end
 
 group :development, :test do
@@ -33,5 +33,5 @@ end
 
 group :load_test do
   gem "toxiproxy"
-  gem "ruby-prof"
+  gem "ruby-prof", platforms: :ruby
 end
