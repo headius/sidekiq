@@ -20,6 +20,7 @@ gem "yard"
 gem "csv"
 gem "vernier", platforms: :ruby unless RUBY_VERSION < "3"
 gem "webrick"
+gem "warbler", platforms: :jruby
 
 group :test do
   gem "maxitest"

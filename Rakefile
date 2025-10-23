@@ -17,3 +17,6 @@ Rake::TestTask.new(:test) do |test|
 end
 
 task default: [:standard, :test]
+
+require "warbler"
+Warbler::Task.new
