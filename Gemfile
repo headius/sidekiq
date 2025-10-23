@@ -3,7 +3,7 @@ source "https://gem.coop"
 gemspec
 
 gem "rake"
-RAILS_VERSION = "~> #{ENV.fetch("RAILS_VERSION", "8")}.0"
+RAILS_VERSION = "~> 7.1"
 gem "actionmailer", RAILS_VERSION
 gem "actionpack", RAILS_VERSION
 gem "activejob", RAILS_VERSION
@@ -14,7 +14,7 @@ gem "redis-client"
 # gem "debug"
 
 gem "sqlite3", "~> 2.2", platforms: :ruby
-gem "activerecord-jdbcsqlite3-adapter", platforms: :jruby
+gem "activerecord-jdbcsqlite3-adapter", "71", platforms: :jruby
 gem "after_commit_everywhere", require: false
 gem "yard"
 gem "csv"
